@@ -1,0 +1,4 @@
+t/
+# Testsuite tests for a directory called 'src'
+# See: https://bugs.debian.org/768144
+src/sha.h
