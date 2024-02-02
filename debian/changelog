@@ -1,8 +1,39 @@
-libdigest-sha-perl (6.02-1-deepin1) unstable; urgency=medium
+libdigest-sha-perl (6.04-1) unstable; urgency=medium
 
-  * Rebuild
+  * Import upstream version 6.04.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.6.2.
 
- -- Deepin Packages Builder <packages@deepin.org>  Thu, 24 Nov 2022 07:24:03 +0800
+ -- gregor herrmann <gregoa@debian.org>  Wed, 01 Mar 2023 18:00:51 +0100
+
+libdigest-sha-perl (6.03-1) unstable; urgency=medium
+
+  * Import upstream version 6.03.
+    Fixes "shasum treats read errors like end of file"
+    (Closes: #986159)
+  * Update years of upstream copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 13 Aug 2022 18:35:16 +0200
+
+libdigest-sha-perl (6.02-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Update standards version to 4.1.5, no changes needed.
+  * Bump debhelper from old 12 to 13.
+
+  [ gregor herrmann ]
+  * Refresh lintian overrides.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.1.
+  * Annotate test-only build dependencies with <!nocheck>.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 30 Jul 2022 19:35:49 +0200
 
 libdigest-sha-perl (6.02-1) unstable; urgency=medium
 

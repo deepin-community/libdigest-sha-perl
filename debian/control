@@ -1,26 +1,29 @@
 Source: libdigest-sha-perl
-Section: perl
-Priority: optional
-Build-Depends: debhelper (>= 10),
- libtest-pod-coverage-perl,
- libtest-pod-perl,
- perl
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Uploaders: Allard Hoeve <allard@byte.nl>,
- Niko Tyni <ntyni@iki.fi>,
- gregor herrmann <gregoa@debian.org>,
- Damyan Ivanov <dmn@debian.org>,
- Salvatore Bonaccorso <carnil@debian.org>
-Standards-Version: 4.1.4
-Homepage: https://metacpan.org/release/Digest-SHA
-Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libdigest-sha-perl.git
-Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libdigest-sha-perl
+           Niko Tyni <ntyni@iki.fi>,
+           gregor herrmann <gregoa@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
 Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libtest-pod-coverage-perl <!nocheck>,
+               libtest-pod-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libdigest-sha-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libdigest-sha-perl.git
+Homepage: https://metacpan.org/release/Digest-SHA
 Rules-Requires-Root: no
 
 Package: libdigest-sha-perl
 Architecture: any
-Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
 Description: Perl extension for SHA-1/224/256/384/512, SHA-512/224 and SHA-512/256
  Digest::SHA is a complete implementation of the NIST Secure Hash Standard.
  It gives Perl programmers a convenient way to calculate SHA-1, SHA-224,

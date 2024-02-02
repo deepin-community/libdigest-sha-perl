@@ -4,13 +4,13 @@ Upstream-Contact: Mark Shelor <mshelor@cpan.org>
 Source: https://metacpan.org/release/Digest-SHA
 
 Files: *
-Copyright: 2003-2018, Mark Shelor
+Copyright: 2003-2023, Mark Shelor
 License: Artistic or GPL-1+
 
 Files: debian/*
 Copyright: 2005, 2006, Gunnar Wolf <gwolf@debian.org>
  2005, Allard Hoeve <allard@byte.nl>
- 2006, 2007, 2008, gregor herrmann <gregoa@debian.org>
+ 2006-2023, gregor herrmann <gregoa@debian.org>
  2006, Niko Tyni <ntyni@iki.fi>
  2008, Damyan Ivanov <dmn@debian.org>
  2010-2018, Salvatore Bonaccorso <carnil@debian.org>
